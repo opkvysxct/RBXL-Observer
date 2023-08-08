@@ -41,7 +41,7 @@ end
 
 Observer.destroy = function(self,Silent)
     if self == nil then warn("Observer Error - Code 6") return end
-    if Silent == nil or true then
+    if Silent == nil or Silent == true then
         print("Object Destroyed - " .. self.OBSValue)
     end
     self = nil
